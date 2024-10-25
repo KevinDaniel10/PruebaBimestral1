@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
 export class Tab2Page {
 
   constructor() {}
+  openLink(){
+    window.open('https://github.com/KevinDaniel10/PruebaBimestral1.git','_blank');
+  }
 
 }
