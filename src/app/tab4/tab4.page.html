@@ -1,0 +1,164 @@
+<!--Estilos de la aplicación-->
+<style>
+  ion-card {
+    --background: #000;
+    --color: #ffff;
+  }
+  ion-col {
+  min-height: 100vh;
+}
+
+  ion-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; 
+}
+  ion-card-title {
+    --color: #ffff;
+    font-weight:bold;
+  }
+
+  ion-card-content{
+    --color:#ffff;
+  }
+
+  ion-card-subtitle {
+    --color: #ffff;
+  }
+  table{
+    width: 100%;
+    border:1px solid white;
+    font-size: 16px;
+  }
+  table tr{
+    padding: 12px;
+    text-align: center;
+
+  }
+  table th{
+    font-size: 18px;
+  }
+  table td{
+    font-size: 16px;
+  }
+  .imagen{
+    margin-top: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  img{
+    width:120px;
+    height: 160px;
+    border-radius:10px;
+  }
+  h1{
+    text-align: center;
+    font-weight: bold;
+  }
+  h2{
+    font-size:18px;
+  }
+  h3{
+    font-size: 17px;
+  }
+  p,li{
+    text-align: justify;
+    font-size: 16px;
+  }
+</style>
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Erick Sebastian Caiza Quishpe
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 1</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-grid>
+    <ion-row> 
+      <ion-col size="12" size-lg="6">
+        <ion-card style="background-color: rgb(4, 4, 39);">
+          <div class="imagen">
+          <img src="assets/img/perfil.png" />
+        </div>
+          <ion-card-header>
+            <h1><strong>Erick Sebastian Caiza Quishpe</strong></h1>
+            <h2 style="text-align: center;">Tec. Superior en Desarrollo de Software</h2>
+          </ion-card-header>
+        <ion-card-content>
+          <h1>Sobre mi</h1>
+            <p>Desarrollador front-end altamente motivado con
+conocimientos en HTML, CSS y JavaScript.
+He trabajado con framework React para la creación de
+aplicaciones web modernas y eficientes. Poseo
+habilidades avanzadas en el diseño e implementación de
+interfaces de usuario responsivas y atractivas.</p>
+          <h1>Estudios</h1>
+          <p>
+            Tec. Superior en Desarrollo de Software - Escuela Politécnica 2021-Presente
+            <br>
+            Bachiller Técnica en Informática - Unidad Educativa "Patrimonio de la Humanidad" 2016-2021
+          </p>
+          <h1>Tecnologías & Lenguajes de programación</h1>
+            <li>Javascript</li>
+            <li>PHP</li>
+            <li>React</li>
+            <li>Phyton</li>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="12" size-lg="6">
+        <ion-card style="background-color: #ffff;color:#000000;">
+          
+          <ion-card-content>
+            <h1><strong>Experiencia Laboral</strong></h1>
+            <h2><strong>Pasante en Desarrollo de Aplicaciones Web (Servicio Comunitario)</strong> </h2>
+            <h2><strong>Proyecto de investigación interinstitucional ReCo-Andes </strong></h2>
+
+<h3><strong>Noviembre 2023 - Marzo 2024</strong></h3>
+<h3><strong>Tareas encargadas: </strong></h3>
+<p>
+Administración y mantenimiento de bases de datos relacionales para el proyecto de investigación. 
+<br>
+Lideré la investigación y diseño de un prototipo de página web para difundir los resultados del proyecto entre la sociedad civil. 
+<br>
+Colaboré en el diseño y recopilación de requisitos de usuario para el desarrollo de un sitio web dedicado al proyecto. 
+<br>
+Participé en la corrección y lanzamiento de la propuesta inicial del blog del proyecto.
+          </p>
+<h1><strong>CURSOS</strong></h1> 
+<table style="border:1px solid #000000">
+  <tr><th style="font-weight: bold;">Capacítate para El Empleo</th></tr>
+  <tr style = "border:1px solid #000000">
+    <th style="border-right:1px solid #000000">Curso: Desarrollador Back-end </th>
+    <td>106 horas</td>
+     </tr>
+   
+    <tr>
+      <th style="border:1px solid #000000">Curso: Administrador en Bases de Datos </th>   
+      <td style="border:1px solid #000000">83 horas</td>
+    </tr>   
+    <tr>
+      <th style="border:1px solid #000000">Curso: Desarrollador Front-end</th>   
+      <td style="border:1px solid #000000">96 horas</td>
+    </tr>  
+    <tr>
+      <th style="border:1px solid #000000">Curso: Diseñador de experiencia de usuario (UX)</th>   
+      <td style="border:1px solid #000000">51 horas</td>
+    </tr>                                                       
+  </table>                         
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+</ion-content>

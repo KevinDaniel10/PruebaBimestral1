@@ -1,0 +1,159 @@
+<ion-header translucent="true">
+  <ion-toolbar>
+    <ion-title class="text-center text-white">
+      CV Kevin Cola
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <div class="ion-padding">
+    <ion-card class="bg-gradient-to-r from-indigo-600 via-purple-500 to-pink-500">
+      <div class="flex flex-col items-center gap-4">
+        <div class="flex flex-col justify-center items-center">
+          <ion-card-subtitle class="text-xl text-white">
+            Estudiante de Tecnología en Desarrollo de Software
+          </ion-card-subtitle>
+          
+          <img
+            src="assets/profiles/Daniel.jpg"
+            alt="Daniel Cola"
+            class="rounded-full border-4 border-gray-900 shadow-lg"
+            height="150"
+            width="150"
+          >
+        </div>
+  
+        <div class="text-center">
+          <ion-card-header>
+            <ion-card-title class="pb-3 text-lg text-white">Kevin Daniel Cola Guaman</ion-card-title>
+            <ion-label class="text-gray-200 text-justify text-lg font-bold italic">
+              Me gusta mucho los retos en la vida, conocer nuevas personas y poder aprender de ellas.
+              Actualmente en 5° semestre de la carrera de tecnología en Desarrollo de Software en la 
+              Politécnica Nacional, también cursando la carrera de Matemática Pura 6° semestre en la Universidad 
+              Central del Ecuador.
+            </ion-label>
+          </ion-card-header>
+        </div>
+      </div>
+    </ion-card>
+  </div>
+
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-3">
+    <ion-card class="bg-gradient-to-r from-teal-400 to-teal-600 shadow-lg">
+      <ion-card-header>
+        <ion-card-title class="text-white">Experiencia</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list class="text-center text-white">
+          <ion-item>
+            <ion-label>Desarrollador de Software</ion-label>
+            <ion-label>2022 - Actualidad</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="bg-gradient-to-r from-cyan-400 to-cyan-600 shadow-lg">
+      <ion-card-header>
+        <ion-card-title class="text-white">Estudios</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list class="text-center text-white">
+          <ion-item>
+            <ion-label>Universidad Central del Ecuador</ion-label>
+            <ion-label>Matemática Pura</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Escuela Politécnica Nacional</ion-label>
+            <ion-label>Tecnología Superior en Desarrollo de Software</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Unidad Educativa Machachi</ion-label>
+            <ion-label>Bachillerato en Ciencias</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="bg-gradient-to-r from-blue-700 to-blue-900 shadow-lg">
+      <ion-card-header>
+        <ion-card-title>
+          <ion-icon name="shield-checkmark-outline" class="text-white"></ion-icon>
+          <span class="text-white">HABILIDADES</span>
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list class="text-center text-white">
+          <ion-item>
+            <ion-label>Dominio del Idioma Inglés</ion-label>
+            <ion-label>Intermedio</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Lenguajes</ion-label>
+            <ion-label>Java, C++, HTML</ion-label> 
+          </ion-item>
+          <ion-item>
+            <ion-label>Manejo de Paquete de Office</ion-label>
+            <ion-label>Word, Excel, Power Point</ion-label> 
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+
+    <div class="flex flex-row items-center justify-center space-x-4 p-4">
+      <ion-card class="w-80 h-48 bg-gradient-to-r from-purple-500 to-purple-700">
+        <ion-card-header>
+          <ion-card-title class="text-white">Contacto</ion-card-title>
+        </ion-card-header>
+        <ion-card-content class="text-white">0968388776</ion-card-content>
+      </ion-card>
+      
+      <ion-card class="w-80 h-48 bg-gradient-to-r from-teal-500 to-teal-700">
+        <ion-card-header>
+          <ion-card-title class="text-white">Emails</ion-card-title>
+        </ion-card-header>
+        <ion-card-content class="text-white">
+          kevin.cola&#64;epn.edu.ec <br>
+          kdcola&#64;uce.edu.ec
+        </ion-card-content>
+      </ion-card>
+      
+      <ion-card class="w-80 h-48 bg-gradient-to-r from-red-500 to-red-700">
+        <ion-card-header>
+          <ion-card-title class="text-white">Hobbies</ion-card-title>
+        </ion-card-header>
+        <ion-card-content class="text-white">
+          Fútbol <br>
+          Películas de Ciencia <br>
+          Salir con amigos
+        </ion-card-content>
+      </ion-card>
+    </div>
+    <ion-card class="bg-gray-800 p-3 border-2 border-gray-800 rounded-lg col-span-full shadow-lg">
+      <ion-card-header>
+        <ion-card-title class="text-white">Habilidades</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list class="text-white">
+          <ion-item *ngFor="let skill of skills">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 w-full">
+              <ion-label class="text-center">{{ skill.name }}</ion-label>
+              <ion-progress-bar
+                *ngIf="skill.progress !== undefined"
+                type="determinate"
+                [color]="getColor(skill.progress)"
+                [value]="skill.progress"
+                class="hidden md:flex"
+              ></ion-progress-bar>
+              <ion-label class="text-center">{{ (skill.progress * 100) | number:'1.2-2' }}%</ion-label>
+            </div>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+
+
