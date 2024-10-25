@@ -1,107 +1,142 @@
-<ion-header [translucent]="true">
+<ion-header translucent="true">
   <ion-toolbar>
-    <ion-title>
-      CV Marcelo Pinzón
+    <ion-title class="text-center text-white">
+      Biografía Kevin Cola
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="bg-gray-900">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Marcelo Pinzón</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
+<ion-content fullscreen>
   <div class="ion-padding">
-    <ion-card class="bg-gray-800 p-3 border-2 border-gray-500 rounded-lg shadow-2xl shadow-gray-500/50">
-      <div class="grid grid-cols-5 gap-4">
-        <ion-card-header class="col-span-4 text-center">
-          <ion-card-subtitle>Desarrollador de Software</ion-card-subtitle>
-          <ion-card-title class="pb-3">Marcelo Pinzón</ion-card-title>
-          <ion-label class="text-white text-justify">
-            Me apasiona poder adquirir nuevos conocimientos, especialmente conocimientos que tengan relación con mi campo de estudio.<br>
-            Me gusta llevar cada nuevo concepto adquirido a la práctica mediante creaciones de mini proyectos
-          </ion-label>
-        </ion-card-header>
-
-        <div class="flex flex-col justify-center items-center col-span-1">
+    <ion-card class="bg-gradient-to-r from-indigo-600 via-purple-500 to-pink-500">
+      <div class="flex flex-col items-center gap-4">
+        <div class="flex flex-col justify-center items-center">
+          <ion-card-subtitle class="text-xl text-white">
+            Kevin Daniel Cola Guaman
+          </ion-card-subtitle>
+          
           <img
-            src="assets/profiles/Alejo.jpg"
-            alt="Alejo Pinzón"
-            class="rounded-lg border-2 border-slate-700"
-            height="100"
-            width="100"
+            src="assets/profiles/Daniel.jpg"
+            alt="Daniel Cola"
+            class="rounded-full border-4 border-gray-900 shadow-lg"
+            height="150"
+            width="150"
           >
         </div>
+  
+        <div class="text-center">
+          <ion-card-header>
+            <ion-card-title class="pb-3 text-lg text-white"></ion-card-title>
+            <ion-label class="text-gray-200 text-justify text-lg font-bold italic">
+              Hola bienvenido a mi biografia, Mi nombre el Kevin Daniel Cola Guaman, naci en Machachi-Ecuador el 10 de marzo del 2001, actualmente tengo 23 años
+              , Hijo de Mario Cola y Alicia Guaman, me crie en Machachi y realice mis primeros estudios primarios en la escuela Nuetra Señora
+              De los Dolores en Aloasi, posteriormente  realice mis estudios secundarios en la Unidad Educativa Machachi y actualmente estoy cursando
+              mis estudios Universitarios en la Escuela Politecnica Naciona y en la Universidad Central del Ecuador. Me gusta mucho los retos en la vida, conocer nuevas personas y poder aprender de ellas.
+              Actualmente en 5° semestre de la carrera de tecnología en Desarrollo de Software en la 
+              Politécnica Nacional, también cursando la carrera de Matemática Pura 6° semestre en la Universidad 
+              Central del Ecuador.
+            </ion-label>
+          </ion-card-header>
+        </div>
       </div>
-      <ion-card-content class="text-center">
-        Soy un desarrollador de software, actualmente estoy cursando 5° semestre la carrera de <em>Tecnología Superior en Desarrollo de Software</em> en la <em>Escuela Politecnica Nacional</em> del Ecuador.
-      </ion-card-content>
     </ion-card>
   </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-3 p-3">
-    <div class="flex flex-row justify-center col-span-full">
-      <ion-icon name="document" class="text-2xl p-2"></ion-icon>
-      <ion-label class="text-white text-center text-lg p-2 m-0">Informacion</ion-label>
-    </div>
-    <ion-card class="bg-green-900 p-3 border-2 border-green-500 rounded-lg shadow-2xl shadow-green-500/50">
-      <ion-card-header class="flex flex-row justify-center">
-        <ion-icon name="person" class="text-2xl p-2"></ion-icon>
-        <ion-card-title class="p-2 m-0">Experiencia</ion-card-title>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-3">
+    <ion-card class="bg-gradient-to-r from-teal-400 to-teal-600 shadow-lg">
+      <ion-card-header>
+        <ion-card-title class="text-white">Cumpleaños</ion-card-title>
       </ion-card-header>
       <ion-card-content>
-        <ion-list class="text-center text-white border-2 border-gray-800 rounded-lg">
-          <ion-item>
-            <ion-label>Desarrollador de Software</ion-label>
-            <ion-label>2022 - Actualidad</ion-label>
-          </ion-item>
-        </ion-list>
+        <ion-datetime presentation="date" [preferWheel]="10/03/2001" value="2001-03-10"></ion-datetime>
       </ion-card-content>
     </ion-card>
 
-    <ion-card class="bg-green-900 p-3 border-2 border-green-500 rounded-lg shadow-2xl shadow-green-500/50">
-      <ion-card-header class="flex flex-row justify-center">
-        <ion-icon name="school" class="text-2xl p-2"></ion-icon>
-        <ion-card-title class="p-2 m-0">Estudios</ion-card-title>
+    <ion-card class="bg-gradient-to-r from-cyan-400 to-cyan-600 shadow-lg">
+      <ion-card-header>
+        <ion-card-title class="text-white">Formacion</ion-card-title>
       </ion-card-header>
       <ion-card-content>
-        <ion-list class="text-center text-white border-2 border-gray-800 rounded-lg">
+        <ion-list class="text-center text-white">
           <ion-item>
-            <ion-label>Escuela Politecnica Nacional</ion-label>
+            <ion-label>Unidad Educativa Machachi</ion-label>
+            <ion-label>Bachillerato en Ciencias</ion-label>
+          </ion-item>
+  
+          <ion-item>
+            <ion-label>Universidad Central del Ecuador</ion-label>
+            <ion-label>Matemática Pura</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Escuela Politécnica Nacional</ion-label>
             <ion-label>Tecnología Superior en Desarrollo de Software</ion-label>
           </ion-item>
+         
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="bg-gradient-to-r from-blue-700 to-blue-900 shadow-lg">
+      <ion-card-header>
+        <ion-card-title>
+          <ion-icon name="shield-checkmark-outline" class="text-white"></ion-icon>
+          <span class="text-white">HABILIDADES</span>
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list class="text-center text-white">
           <ion-item>
-            <ion-label>Unidad Educativa “Luis Felipe Borja del Alcázar”</ion-label>
-            <ion-label>Bachillerato en ciencias</ion-label>
+            <ion-label>Dominio del Idioma Inglés</ion-label>
+            <ion-label>Intermedio</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Lenguajes</ion-label>
+            <ion-label>Java, C++, HTML</ion-label> 
+          </ion-item>
+          <ion-item>
+            <ion-label>Manejo de Paquete de Office</ion-label>
+            <ion-label>Word, Excel, Power Point</ion-label> 
           </ion-item>
         </ion-list>
       </ion-card-content>
     </ion-card>
 
-    <ion-card class="bg-cyan-900 p-3 border-2 border-cyan-500 rounded-lg col-span-full shadow-2xl shadow-cyan-500/50">
-      <ion-card-header class="flex flex-row justify-center">
-        <ion-icon name="construct" class="text-2xl p-2"></ion-icon>
-        <ion-card-title class="p-2 m-0">Habilidades</ion-card-title>
+    <div class="flex flex-row items-center justify-center space-x-4 p-4">
+      <ion-card class="w-80 h-48 bg-gradient-to-r from-purple-500 to-purple-700">
+        <ion-card-header>
+          <ion-card-title class="text-white">Contacto</ion-card-title>
+        </ion-card-header>
+        <ion-card-content class="text-white">0968388776</ion-card-content>
+      </ion-card>
+      
+      <ion-card class="w-80 h-48 bg-gradient-to-r from-teal-500 to-teal-700">
+        <ion-card-header>
+          <ion-card-title class="text-white">Emails</ion-card-title>
+        </ion-card-header>
+        <ion-card-content class="text-white">
+          kevin.cola&#64;epn.edu.ec <br>
+          kdcola&#64;uce.edu.ec
+        </ion-card-content>
+      </ion-card>
+      
+      <ion-card class="w-80 h-48 bg-gradient-to-r from-red-500 to-red-700">
+        <ion-card-header>
+          <ion-card-title class="text-white">Hobbies</ion-card-title>
+        </ion-card-header>
+        <ion-card-content class="text-white">
+          Fútbol <br>
+          Películas de Ciencia <br>
+          Salir con amigos
+        </ion-card-content>
+      </ion-card>
+    </div>
+    <ion-card class="bg-gray-800 p-3 border-2 border-gray-800 rounded-lg col-span-full shadow-lg">
+      <ion-card-header>
+        <ion-card-title class="text-white">Deportes</ion-card-title>
       </ion-card-header>
       <ion-card-content>
-        <div class="flex flex-row justify-start">
-          <ion-icon name="language" class="text-2xl p-2"></ion-icon>
-          <ion-label class="text-white text-lg p-2 m-0">Idiomas</ion-label>
-        </div>
-        <ion-list class="text-white border-2 border-gray-800 rounded-lg">
-          <ion-item>
-            <ion-label class="text-center">Idioma ingles</ion-label>
-            <ion-label class="text-center">Intermedio</ion-label>
-          </ion-item>
-        </ion-list>
-        
-        <div class="flex flex-row justify-start">
-          <ion-icon name="add-circle" class="text-2xl p-2"></ion-icon>
-          <ion-label class="text-white text-lg p-2 m-0">Adicionales</ion-label>
-        </div>
-        <ion-list class="text-white border-2 border-gray-800 rounded-lg">
+        <ion-list class="text-white">
           <ion-item *ngFor="let skill of skills">
             <div class="grid grid-cols-2 md:grid-cols-3 gap-4 w-full">
               <ion-label class="text-center">{{ skill.name }}</ion-label>
@@ -118,74 +153,50 @@
         </ion-list>
       </ion-card-content>
     </ion-card>
-  </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-3 p-3">
-    <ion-card class="bg-green-900 p-3 border-2 border-green-500 rounded-lg shadow-2xl shadow-green-500/50">
-      <ion-card-header class="flex flex-row justify-center">
-        <ion-icon name="chatbubble-ellipses-outline" class="text-2xl p-2"></ion-icon>
-        <ion-card-title class="p-2 m-0">Contacto</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <ion-list class="text-white border-2 border-gray-800 rounded-lg">
-          <ion-item *ngFor="let contact of contacts">
-            <ion-icon [name]="contact.icon" class="p-2"></ion-icon>
-            <ion-label class="p-2 m-0">{{ contact.name }}</ion-label>
-            <ion-label class="p-2 m-0">{{ contact.value }}</ion-label>
-          </ion-item>
-        </ion-list>
-      </ion-card-content> 
-    </ion-card>
 
-    <ion-card class="bg-green-900 p-3 border-2 border-green-500 rounded-lg shadow-2xl shadow-green-500/50">
-      <ion-card-header class="flex flex-row justify-center">
-        <ion-icon name="hourglass-outline" class="text-2xl p-2"></ion-icon>
-        <ion-card-title class="p-2 m-0">Pasatiempos</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <ion-list class="text-white border-2 border-gray-800 rounded-lg">
-          <ion-item>
-            <ion-label>Escuchar musica</ion-label>
-          </ion-item>
-          <ion-item>
-            <ion-label>Jugar</ion-label>
-          </ion-item>
-        </ion-list>
-      </ion-card-content>
-    </ion-card>
-  </div>
-
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-3">
-    <div class="flex flex-row justify-center col-span-full">
-      <ion-icon name="construct" class="text-2xl p-2"></ion-icon>
-      <ion-label class="text-white text-center text-lg p-2 m-0">Proyectos</ion-label>
-    </div>
-    <ion-card class="bg-red-900 p-3 border-2 border-red-500 rounded-lg shadow-2xl shadow-red-500/50" *ngFor="let project of projects">
+    
+    <ion-card class="cualidades">
       <ion-card-header>
-        <ion-card-title class="text-center">{{project.name}}</ion-card-title>
+        <ion-card-title class="text-black">Cualidades</ion-card-title>
       </ion-card-header>
-      <ion-card-content>
-        <ion-list class="text-white border-2 border-gray-800 rounded-lg">
-          <ion-item class="flex flex-row">
-            <ion-label>Descripción:</ion-label>
-            <ion-label>{{project.desc}}</ion-label>
-          </ion-item>
-          <ion-item class="flex flex-row">
-            <ion-label>Versión actual:</ion-label>
-            <ion-label>{{project.version}}</ion-label>
-          </ion-item>
-          <ion-item class="flex flex-row">
-            <ion-label>Fecha:</ion-label>
-            <ion-label>{{project.dateC}}</ion-label>
-          </ion-item>
-          <ion-item class="flex flex-row" *ngIf="project.link !== undefined">
-            <ion-label>Repositorio:</ion-label>
-            <ion-label>
-              <a [href]="project.link" target="_blank" class="text-blue-400 hover:text-blue-500">GitHub</a>
-            </ion-label>
-          </ion-item>
-        </ion-list>
+      <ion-card-content class="text-white"> 
+      <ion-chip color="secondary">Respetuoso</ion-chip>
+      <ion-chip color="tertiary">Amable</ion-chip>
+      <ion-chip color="success">Amigable</ion-chip>
+      <ion-chip color="warning">Honrado</ion-chip>
       </ion-card-content>
     </ion-card>
+
+
+    <ion-card class="cualidades">
+      <ion-card-header>
+        <ion-card-title class="text-black" checked="True">Objectivos Cumplidos:</ion-card-title>
+      </ion-card-header>
+      <ion-card-content class="text-back"> 
+        <ion-item>
+          <ion-checkbox slot="start"  checked="True"></ion-checkbox>
+          <ion-label value="True">Ganar un campeonato de Fútbol</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-checkbox slot="start"></ion-checkbox>
+          <ion-label>Graduarme</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-checkbox slot="start"  checked="True"></ion-checkbox>
+          <ion-label>Tener un gato</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-checkbox slot="start"></ion-checkbox>
+          <ion-label>Entrar en una buena empresa</ion-label>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+
+
+    
+
+    
+
   </div>
 </ion-content>

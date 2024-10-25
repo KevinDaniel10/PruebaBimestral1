@@ -8,14 +8,12 @@ import { Component } from '@angular/core';
 export class Tab1Page {
   // Lista de habilidades
   skills = [
-    { name: 'HTML', progress: 0.5 },
-    { name: 'CSS', progress: 0.4 },
-    { name: 'JavaScript', progress: 0.7 },
-    { name: 'React', progress: 0.4 },
-    { name: 'Node', progress: 0.55 },
-    { name: 'Express', progress: 0.65 },
-    { name: 'Java', progress: 0.55 },
-    { name: 'Python', progress: 0.75 }
+    { name: 'Futbol', progress: 0.9 },
+    { name: 'Basquet', progress: 0.4 },
+    { name: 'Ajedrez', progress: 0.7 },
+    { name: 'Natación', progress: 0.3 },
+    { name: 'Tenis', progress: 0.55 },
+
   ];
 
   // Lista de proyectos
